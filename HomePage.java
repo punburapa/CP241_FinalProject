@@ -32,7 +32,6 @@ public class HomePage extends JFrame {
     private JCheckBox checkBox2;
     private JCheckBox checkBox3;
     private JCheckBox checkBox4;
-    private JButton inventoryButton;
     private JButton billButton;
     private JTextArea textArea1;
     private JPanel Header;
@@ -217,17 +216,6 @@ public class HomePage extends JFrame {
                     }
                 }
 
-            }
-        });
-        inventoryButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    frame.dispose();
-                    InventoryPage inventoryPage = new InventoryPage();
-                } catch (Exception ex) {
-                    throw new RuntimeException(ex);
-                }
             }
         });
         billButton.addActionListener(new ActionListener() {
